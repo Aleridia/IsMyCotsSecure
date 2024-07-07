@@ -6,6 +6,7 @@ export default function CvePlot() {
 		year: number
 		count: number
 	}
+	//use cve search https://cve-search.github.io/cve-search/database/database.html
 
 	const [data, setData] = useState<Props[]>([
 		{ year: 2010, count: 10 },
