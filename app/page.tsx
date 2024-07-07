@@ -5,12 +5,13 @@ import {
 	QueryClientProvider,
 } from '@tanstack/react-query'
 import GetGH from '@/components/OSS/molecules/getGHCots'
+import CveView from '@/components/graphs/molecules/cveView'
 const queryClient = new QueryClient()
 
 export default function App() {
 	return (
 		<QueryClientProvider client={queryClient}>
-			<GetGH />
+			<CveView />
 		</QueryClientProvider>
 	)
 }
